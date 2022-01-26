@@ -1,0 +1,226 @@
+/*Police*/
+
+@font-face {
+    font-family: 'Handy';
+    src: url(/HandyQuomteRegular-6YLLo.ttf);
+}
+
+li,
+.hist,
+h2,
+.contact,
+.achat-panier,
+.achat-carte,
+.hist {
+    font-family: 'Handy', sans-serif, 'Times New Roman', Times, serif;
+}
+
+/* Header*/
+
+.logo {
+    display: flex;
+    justify-content: center;
+    background-attachment: fixed;
+
+}
+
+.barre {
+    border: 2px solid black;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.logo-bis {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ul-header {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    text-decoration: none;
+
+
+}
+
+.navig {
+    font-size: 1.4em;
+    margin: 10px;
+    margin-bottom: 10px;
+    color: black;
+
+}
+
+/* bordure*/
+
+.border {
+    border: solid black 1px;
+}
+
+/*body*/
+body {
+    background-color: #FFF7E2;
+}
+
+/* Bandeau*/
+.bandeau-images {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*À propos + histoire */
+.histoire {
+    text-align: center;
+    font-size: 1.3em;
+
+
+}
+
+strong {
+    font-weight: normal;
+}
+
+.border-2 {
+    border: solid rgb(0, 0, 0) 1px;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+/*panier*/
+
+.achat-panier {
+    font-size: 1.8em;
+    margin: auto;
+
+}
+
+.achat-panier a {
+    color: black;
+    font-style: italic;
+}
+
+.panier-repas {
+    display: flex;
+    align-items: flex-end;
+    margin: auto;
+    width: 100%;
+    float: left;
+    margin: 0px 15px 15px 0;
+}
+
+.panier-1 {
+    width: 40%;
+}
+
+/* carte*/
+.achat-carte {
+    font-size: 1.8em;
+    margin: auto;
+}
+
+.achat-carte a {
+    color: black;
+    font-style: italic;
+}
+
+.carte {
+    display: flex;
+    align-items: flex-end;
+    margin: auto;
+    width: 100%;
+    float: left;
+    margin: 0px 15px 15px 0;
+}
+
+.carte-1 {
+    width: 40%;
+}
+
+
+/*Footer*/
+.border-footer {
+    border: solid black 2px;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+.add,
+br {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.horaire li {
+    font-size: 1.8em;
+}
+
+
+
+/*responsive*/
+@media (max-width: 576px) {
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navig,
+    .ul-header {
+        display: flex;
+        flex-direction: column;
+    }
+.navig{
+    display: flex;
+    text-align: center;
+}
+
+    .plat1,
+    .plat2,
+    .plat3,
+    .plat4,
+    .plat5 {
+        width: 80%;
+    }
+
+    .bandeau-images {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*ajout hover images*/
+.bandeau-images :hover {
+
+
+    transform: scale(1.15);
+    filter: grayscale(100%);
+    opacity: 0;
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    
+    /*transition*/
+    
+    transition: opacity 4s ease-in
+}
